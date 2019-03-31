@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20190330210823) do
   create_table "proposals", force: true do |t|
     t.string   "name"
     t.string   "description"
-    t.decimal  "value"
+    t.decimal  "value",       precision: 10, scale: 0
     t.date     "date_begin"
     t.date     "date_end"
     t.string   "city"
